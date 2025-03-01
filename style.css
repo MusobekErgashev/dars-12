@@ -2,4 +2,98 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(208, 203, 203, 0.544);
+}
+.container {
+    width: 1200px;
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.slider-box {
+    width: max-content;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+.items {
+    background-color: dodgerblue;
+    display: flex;
+    flex-direction: column;
+    border-radius: 35px;
+    transition: all .2s ease-out;
+}
+.top {
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.top img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    outline: 8px solid white;
+    transition: all .2s ease-in-out;
+}
+.items:hover .top img {
+    outline: 8px solid lightblue;
+    transform: scale(1.1);
+}
+.items:hover {
+    margin-top: -20px;
+}
+.down {
+    display: flex;
+    padding: 30px;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    border-radius: 15px;
+    background-color: white;
+}
+.down h3 {
+    text-align: center;
+    font-size: 22px;
+}
+.down p {
+    width: 250px;
+    text-align: center;
+    opacity: .6;
+    font-weight: 400;
+}
+.down button {
+    padding: 8px 30px;
+    background-color: dodgerblue;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    font-size: 18px;
+    margin-top: 10px;
+    transition: all .2s ease-in;
+}
+.down button:hover {
+    background-color: blue;
+}
+button:hover {
+    cursor: pointer;
+}
+.slide-btn img {
+    width: 80px;
+}
+.slide-btn {
+    background: transparent;
+    border: none;
 }
